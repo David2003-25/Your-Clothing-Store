@@ -1,0 +1,386 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    width: 100%;
+    height: 100px;
+    background-color: #242526;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav .logo img {
+    height: 60px;
+    margin-right: 10px;
+}
+
+
+nav .list-left,
+nav .list-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav .list-left a,
+nav .list-right a {
+    padding: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav .list-left{
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+nav .list-right{
+    font-size: 16px;
+}
+
+#toggle {
+    position: absolute;
+    top: -100px;
+}
+
+nav .icons-bars {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+nav .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.parent {
+    display: grid;
+    padding: 0.4em;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    gap:1em;
+    }
+    .div1{
+        height: 235.9px;
+    }
+
+    .div1 { grid-area: 1 / 1 / 3 / 3; }
+    .div2 { grid-area: 1 / 3 / 3 / 4; }
+    .div3 { grid-area: 1 / 4 / 3 / 5; }
+    .div4 { grid-area: 3 / 1 / 5 / 5; }
+
+/* Estilos para las secciones de ropa */
+.section {
+    padding: 20px;
+    background-color: rgba(234, 234, 234, 0.8); /* Gris Claro con transparencia */
+    margin: 20px 0;
+    z-index: 1; /* Asegura que esté por encima de la imagen de fondo */
+    position: relative; /* Necesario para el z-index */
+}
+
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/**/
+.slider-box { 
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+
+
+.slider-box ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+    width: 100%;
+    list-style: none;
+    position: relative;
+}
+
+.slider-box img{
+    width: 100%;
+}
+
+@keyframes slide {
+    0% { margin-left: 0; }
+    25% { margin-left: -100%; }
+    50% { margin-left: -200%; }
+    75% { margin-left: -300%; }
+    100% { margin-left: 0; }
+  }
+/**/
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-item {
+    width: 200px;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease; /* Transición suave */
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #1B4F72; /* Azul Marino */
+}
+
+.product-item p {
+    font-size: 16px;
+    color: #333;
+}
+
+.product-item a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+}
+
+.product-item a:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+/* Efecto hover en los productos */
+.product-item:hover {
+    transform: translateY(-5px); /* Eleva el producto al pasar el cursor */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Mayor sombra */
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #242526; 
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 1; /* Asegura que esté por encima de la imagen de fondo */
+    position: relative; /* Necesario para el z-index */
+    border-top: 2px solid #f1f1f1;
+    margin-top: 40px;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-informacion, .footer-contactanos, .footer-social {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.footer-informacion h2, .footer-contactanos h2, .footer-social h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-informacion p, .footer-contactanos p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer-contactanos form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-contactanos label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer-contactanos input, .footer-contactanos textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.footer-contactanos button {
+    padding: 10px;
+    background-color: #007bff; /* Azul */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.footer-contactanos button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+.footer-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-social a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-social .social-icono {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+
+.footer-social a:hover {
+    color: orange;
+}
+
+/* Estilos para la disposición de las secciones */
+.ropa-layout {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Ajustes específicos para las secciones de ropa */
+.section.hombres, .section.mujeres, .section.niños, .section.ofertas {
+    flex: 1;
+    min-width: 400px;
+    background-color: rgba(36, 37, 38, 1); /* Mantiene el fondo con transparencia */
+    margin: 17px;
+    padding: 39px;
+}
+
+/* Hacer que el título se vea bien en cada sección */
+.section h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+/* Estilo cuando el usuario pasa el cursor por encima del h2 */
+.section h2:hover {
+    background-color: rgba(255, 165, 0, 0.8); /* Naranja claro */
+    color: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: translateX(10px) translateY(-5px);
+}
+
+@media (max-width: 900px) {
+
+    nav .logo {
+        width: auto;
+        justify-content: center;
+    }
+
+    nav .list-left {
+        float: none;
+        position: fixed;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: rgba(0, 0, 0, 0.8);
+        overflow: hidden;
+        transition: all .5s ease-in-out;
+    }
+
+    nav .list-left a {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    nav .list-right {
+        position: absolute;
+        right:90px;
+        top: 2.5;
+        z-index: 10; 
+    }
+
+    nav .icons-bars {
+        display: block;
+    }
+
+    nav input:checked ~ .list-left {
+        bottom: 0;
+    }
+    
+    body{
+        padding: 30px;
+    }
+    .slider-box{
+        width: 100%;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        align-items: center;
+    }
+}

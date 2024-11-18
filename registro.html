@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link href="../ESTILOS_PG_ROPA/registro_estilos.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <form>
+        <label class="titulo">Registro</label>
+        <hr /><br>
+        <label class="lbl-datosPersonales">Nombre</label>
+        <input type="text" class="txt-datosPersonales" placeholder="Jhon" />
+        <label class="lbl-datosPersonales">Apellido</label>
+        <input type="text" class="txt-datosPersonales" placeholder="Doe" />
+        <label class="lbl-datosPersonales">DNI</label>
+        <input type="text" class="txt-datosPersonales" />
+        <label class="lbl-datosPersonales">Correo Electrónico</label>
+        <input type="text" class="txt-datosPersonales" />
+        <label class="lbl-datosPersonales">Contraseña</label>
+        <input type="password" class="txt-datosPersonales" />
+        <label class="lbl-datosPersonales">Fecha de Nacimiento</label>
+        <div class="date">
+            <input type="text" placeholder="Día" size="2" class="fecNacimiento" />
+            <input type="text" placeholder="Mes" size="2" class="fecNacimiento" />
+            <input type="text" placeholder="Año" size="4" class="fecNacimiento" />
+        </div>
+        <div class="botones">
+            <input type="button" value="Atrás" class="btn-atras" onclick="window.location.href='logueo.html';">
+            <input type="button" value="Continuar" class="btn-continuar" onclick="window.location.href='logueo.html';">
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link href="../ESTILOS_PG_ROPA/logueo_estilo.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <form>
+        <label class="titulo1">Inicio de Sesión</label>
+        <input type="button" value="X" name="cerrar" class="btn-cerrar" onclick="window.location.href='index.html';"/>
+        <hr /><br /><br /><br />
+        <label class="titulo2">Correo</label>
+        <br />
+        <input
+            type="text"
+            placeholder="Correo@example.com"
+            name="correo"
+            class="txt-correo"
+        />
+        <br />
+        <label class="titulo2">Contraseña</label>
+        <br />
+        <input type="password" name="contraseña" placeholder="********************" class="psw-contraseña" />
+        <br />
+        <a href="" class="lnk-olvideContraseña">Olvidé mi contraseña</a>
+        <br />
+        <div class="btn-contenedor">
+            <input type="button" value="Ingresar" class="sbt-ingresar" onclick="window.location.href='index.html';" />
+        </div>
+        <br />
+        <label class="titulo3">¿No tienes una cuenta?</label>
+        <br />
+        <div class="btn-contenedor">
+            <input type="button" value="Regístrate" class="btn-registrate" onclick="window.location.href='registro.html';" />
+        </div>
+    </form>
+</body>
+</html>

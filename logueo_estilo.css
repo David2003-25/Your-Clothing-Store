@@ -1,0 +1,133 @@
+/* Estilo básico para el cuerpo */
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative; 
+    overflow: hidden; 
+}
+
+/* Imagen de fondo */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../imagenes/logo_del_logueo.jpeg'); 
+    background-size: cover; 
+    background-position: center;
+    opacity: 0.5; 
+    z-index: -1; 
+    animation: moveBackground 30s infinite linear; 
+}
+
+
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 100% 100%; }
+}
+
+/* Estilo del formulario */
+form {
+    background-color: #2b2b2b;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    position: relative; 
+}
+
+/* Estilos para los títulos */
+.titulo1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 100;
+    display: block;
+    color: #ffffff;
+}
+
+.titulo2, .titulo3 {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 1px;
+    display: block;
+    color: #ffffff;
+}
+
+.titulo3 {
+    text-align: center;
+}
+
+/* Estilos para los campos de texto */
+.psw-contraseña, .txt-correo {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    background-color: transparent;
+    padding: 5px 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del contenedor de los botones */
+.btn-contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para los botones */
+.sbt-ingresar, .btn-registrate {
+    width: calc(70% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #0f7bee;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sbt-ingresar:hover, .btn-registrate:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo del botón cerrar */
+.btn-cerrar {
+    background-color: #2b2b2b;
+    color: #ffffff;
+    float: right;
+    width: auto;
+    padding: 5px 8px;
+    border-radius: 16px;
+    margin-top: -35px;
+    margin-right: -15px;
+    border: none;
+}
+
+.btn-cerrar:hover {
+    background-color: #d11b1b;
+}
+
+/* Estilos para el enlace de contraseña olvidada */
+.lnk-olvideContraseña {
+    display: block;
+    text-align: right;
+    color: #3992f1;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.lnk-olvideContraseña:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Hombres - YOUR CLOTHING STORE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Programacion/public_html/ESTILOS_PG_ROPA/style.css"/>
+    <link rel="stylesheet" href="/Programacion/public_html/ESTILOS_PG_ROPA/estilo_carrito.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+
+    <!-- Incluir los enlaces de Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="toggle" />
+        <div class="logo">
+          <img
+            src="/Programacion/public_html/IMAGENES/LOGO_TIENDA_PERCHERO.png"
+            alt="Logo de Tu Tienda de Ropa"
+          />
+          YOUR <br />CLOTHING <br />STORE
+        </div>
+        <ul class="list-left">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Hombres.html">Hombres</a></li>
+          <li><a href="mujeres.html">Mujeres</a></li>
+          <li><a href="niños.html">Niños</a></li>
+          <li><a href="ofertas.html">Ofertas</a></li>
+          <li><a href="#contenido">Contactos</a></li>
+        </ul>
+        <ul class="list-right">
+          <li>
+            <a href="logueo.html"><i class="fa-regular fa-user"></i></a>
+          </li>
+          <li>
+            <a href="#" onclick="mostrarCarrito()"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+        <label for="toggle" class="icons-bars">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+      </nav>
+
+    <!-- Sección de Hombres -->
+    <section id="hombre" class="section hombres">
+        <h2>Ropa para Hombres</h2>
+        <div class="products">
+            <!-- Producto 1: Camiseta Casual -->
+            <div class="product-item">
+                <div id="carouselProducto1" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../IMAGENES/polo_hombre_1_azul.jpeg" class="d-block w-100" alt="Camiseta Azul">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../IMAGENES/polo_de_homre_rojo.jpeg" class="d-block w-100" alt="Camiseta Roja">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../IMAGENES/polo_de_hombre_verde.jpeg" class="d-block w-100" alt="Camiseta Verde">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+                <h3>Camiseta Casual</h3>
+                <p>$60.00</p>
+                <a href="camiseta_casual.html" style="color: red;">Ver Detalles</a>
+            </div>
+
+            <!-- Producto 2: Chaqueta de Cuero -->
+            <div class="product-item">
+                <div id="carouselProducto2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../IMAGENES/CHAQUETA_CUERO_HOMRE_NEGRA.jpeg" class="d-block w-100" alt="Chaqueta Negra">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../IMAGENES/chaqueta gris.jpeg" class="d-block w-100" alt="Chaqueta Gris">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../IMAGENES/chaqueta marron.jpeg" class="d-block w-100" alt="Chaqueta Marrón">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto2" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto2" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+                <h3>Chaqueta de Cuero</h3>
+                <p>$120.00</p>
+                <a href="chaqueta_cuero.html" style="color: red;">Ver Detalles</a>
+            </div>
+
+            <!-- Producto 3: Pantalón Casual -->
+            <div class="product-item">
+                <div id="carouselProducto3" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../IMAGENES/pantalon1.jpeg" class="d-block w-100" alt="Pantalón1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../IMAGENES/pantalon2.jpeg" class="d-block w-100" alt="Pantalón2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../IMAGENES/pantalon3.jpeg" class="d-block w-100" alt="Pantalón3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProducto3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProducto3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+                <h3>Pantalón Casual</h3>
+                <p>$60.00</p>
+                <a href="pantalon_casual.html" style="color: red;">Ver Detalles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ventana emergente del carrito -->
+    <div id="popupCarrito" style="display: none;">
+        <div>
+            <!-- Contenido del carrito se cargará aquí -->
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+            <div class="footer-contenido">
+                <div class="footer-informacion">
+                    <h2>Sobre Nosotros</h2>
+                    <p>Somos una tienda en línea dedicada a ofrecer las mejores prendas para cada ocasión. Nuestra misión es brindarte la mejor experiencia de compra con productos de alta calidad.</p>
+                </div>
+                <div class="footer-contactanos">
+                    <h2>Contáctanos</h2>
+                    <p><strong>Dirección:</strong> Calle MiCasa 123, Ciudad DondeVivo, País DondeNaci</p>
+                    <p><strong>Teléfono:</strong> +51 922001055</p>
+                    <p><strong>Correo Electrónico:</strong> contacto@YOUR CLOTHING STORE.com</p>
+                    <form>
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <div class="footer-social">
+                    <h2>Síguenos en</h2>
+                    <ul>
+                        <li><a href="https://es-la.facebook.com/"><img src="../IMAGENES/facebook.jpg" alt="Facebook" class="social-icono"> Facebook</a></li>
+                        <li><a href="https://x.com/"><img src="../IMAGENES/x.png" alt="Twitter" class="social-icono"> Twitter</a></li>
+                        <li><a href="https://www.instagram.com/?hl=es"><img src="../IMAGENES/isntragram{.jpg" alt="Instagram" class="social-icono"> Instagram</a></li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+        </footer>
+
+        
+        <div id="carritoModal" class="modal">
+            <div class="modal-header">
+                <h2>Carrito de Compras</h2>
+                <button onclick="cerrarCarrito()">Cerrar</button>
+            </div>
+            <div id="carritoContenido">
+                <p>El carrito está vacío.</p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+            </div>
+        </div>
+
+        <footer id="contenido">
+            <div class="footer-contenido">
+                <!-- Footer existente -->
+            </div>
+        </footer>
+        
+
+        <script>
+            // Función para agregar productos al carrito
+            function agregarAlCarrito(nombre, precio) {
+                const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                carrito.push({ nombre, precio });
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+                alert(`${nombre} ha sido agregado al carrito.`);
+            }
+
+            // Mostrar el carrito
+            function mostrarCarrito() {
+                const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                const carritoModal = document.getElementById('carritoModal');
+                const carritoContenido = document.getElementById('carritoContenido');
+
+                carritoContenido.innerHTML = ''; // Limpiar contenido anterior
+
+                if (carrito.length === 0) {
+                    carritoContenido.innerHTML = '<p>El carrito está vacío.</p>';
+                } else {
+                    carrito.forEach((producto, index) => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'cart-item';
+                        itemDiv.innerHTML = `
+                            <span>${producto.nombre} - $${producto.precio}</span>
+                            <button onclick="eliminarDelCarrito(${index})">Eliminar</button>
+                        `;
+                        carritoContenido.appendChild(itemDiv);
+                    });
+                }
+
+                carritoModal.classList.add('show');
+            }
+
+            // Cerrar el carrito
+            function cerrarCarrito() {
+                document.getElementById('carritoModal').classList.remove('show');
+            }
+
+            // Vaciar el carrito
+            function vaciarCarrito() {
+                localStorage.removeItem('carrito');
+                mostrarCarrito();
+            }
+
+            // Eliminar un producto del carrito
+            function eliminarDelCarrito(index) {
+                const carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+                carrito.splice(index, 1);
+                localStorage.setItem('carrito', JSON.stringify(carrito));
+                mostrarCarrito();
+            }
+        </script>
+
+
+    </body>
+</html>

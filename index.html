@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/Programacion/public_html/ESTILOS_PG_ROPA/style.css"/>
+    <link rel="stylesheet" href="/Programacion/public_html/ESTILOS_PG_ROPA/estilo_carrito.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>YCS</title>
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="toggle" />
+      <div class="logo">
+        <img
+          src="/Programacion/public_html/IMAGENES/LOGO_TIENDA_PERCHERO.png"
+          alt="Logo de Tu Tienda de Ropa"
+        />
+        YOUR <br />CLOTHING <br />STORE
+      </div>
+      <ul class="list-left">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="Hombres.html">Hombres</a></li>
+        <li><a href="mujeres.html">Mujeres</a></li>
+        <li><a href="niños.html">Niños</a></li>
+        <li><a href="ofertas.html">Ofertas</a></li>
+        <li><a href="#contenido">Contactos</a></li>
+      </ul>
+      <ul class="list-right">
+        <li>
+          <a href="logueo.html"><i class="fa-regular fa-user"></i></a>
+        </li>
+        <li>
+          <a href="#" onclick="mostrarCarrito()"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+      </ul>
+      <label for="toggle" class="icons-bars">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+
+    <div class="parent">
+      <div class="div1">
+        <a href="./Mujer.html">
+          <img src="/Programacion/public_html/IMAGENES/image3.webp" alt="Imagen Mujer" />
+        </a>
+      </div>
+      <div class="div2">
+        <a href="./Hombre.html">
+          <img src="/Programacion/public_html/IMAGENES/image2.webp" alt="Imagen Hombre" />
+        </a>
+      </div>
+      <div class="div3">
+        <a href="./Otro.html">
+          <img src="/Programacion/public_html/IMAGENES/image1.webp" alt="Imagen Otro" />
+        </a>
+      </div>
+      <div class="div4">
+        <a href="./Infantil.html">
+          <img src="/Programacion/public_html/IMAGENES/image4.webp" alt="Imagen Infantil" />
+        </a>
+      </div>
+    </div>
+
+    <main>
+
+<!-- Sección de Hombres -->
+<section id="hombre" class="section hombres">
+    <h2>Ropa para Hombres</h2>
+    <div  class="slider-box">
+        <ul>
+            <li><img src="../IMAGENES/polo_hombre_1_azul.jpeg" alt="Camiseta Casual" /></li>
+            <li><img src="../IMAGENES/CHAQUETA_CUERO_HOMRE_NEGRA.jpeg" alt="Chaqueta de Cuero" /></li>
+            <li><img src="../IMAGENES/polo_hombre_1_azul.jpeg" alt="Pantalón de Hombre" /></li>
+            <li><img src="../IMAGENES/T-shirt.jpg" alt="Camisa Formal" /></li>
+        </ul>
+    </div>
+  </section>
+  
+  <!-- Sección de Mujeres -->
+  <section id="mujeres" class="section mujeres">
+    <h2>Ropa para Mujeres</h2>
+    <div  class="slider-box">
+        <ul>
+            <li><img src="../IMAGENES/BlusaMujerElsaSolidCamel.webp" alt="Blusa Mujer Elsa" /></li>
+            <li><img src="../IMAGENES/CasacaMujerMalenaNude.webp" alt="Casaca Mujer Malena" /></li>
+            <li><img src="../IMAGENES/VestidoMujerBelenRojo.webp" alt="Vestido Mujer Belen" /></li>
+            <li><img src="../IMAGENES/ChompaMujerClaseNegro.webp" alt="Chompa Mujer" /></li>
+        </ul>
+    </div>
+  </section>
+  
+  <!-- Sección de Niños -->
+  <section id="niños" class="section niños">
+    <h2>Ropa para Niños</h2>
+    <div  class="slider-box">
+        <ul>
+            <li><img src="../IMAGENES/CAMISETA_DIVERTIDA.jpeg" alt="Camiseta Divertida" /></li>
+            <li><img src="../IMAGENES/depoetivo_ninos.jpeg" alt="Pantalón Deportivo" /></li>
+            <li><img src="../IMAGENES/420.jpg" alt="Otra Prenda 1" /></li>
+            <li><img src="../IMAGENES/T-shirt.jpg" alt="Otra Prenda 2" /></li>
+        </ul>
+    </div>
+  </section>
+  
+  <!-- Sección de Ofertas -->
+  <section id="ofertas" class="section ofertas">
+    <h2>Ofertas Especiales</h2>
+    <div  class="slider-box">
+        <ul>
+            <li><img src="../IMAGENES/chaqueta_descuento.jpeg" alt="Chaqueta en descuento" /></li>
+            <li><img src="../IMAGENES/ropa _desceunto.jpeg" alt="Polo en descuento" /></li>
+            <li><img src="../IMAGENES/depoetivo_ninos.jpeg" alt="Buzo de niños en descuento" />/li>
+            <li><img src="../IMAGENES/vestido_descuento.jpg" alt="Vestido en descuento" /></li>
+        </ul>
+    </div>
+  </section>
+  
+      <br /><br /><br /><br />
+    </main>
+
+    <footer>
+      <div class="footer-contenido">
+        <div class="footer-informacion">
+          <h2>Sobre Nosotros</h2>
+          <p>
+            Somos una tienda en línea dedicada a ofrecer las mejores prendas
+            para cada ocasión. Nuestra misión es brindarte la mejor experiencia
+            de compra con productos de alta calidad.
+          </p>
+        </div>
+        <div class="footer-contactanos">
+          <h2>Contáctanos</h2>
+          <p>
+            <strong>Dirección:</strong> Calle MiCasa 123, Ciudad DondeVivo, País
+            DondeNaci
+          </p>
+          <p><strong>Teléfono:</strong> +51 922001055</p>
+          <p>
+            <strong>Correo Electrónico:</strong> contacto@YOUR CLOTHING
+            STORE.com
+          </p>
+          <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+
+        <div class="footer-social">
+          <h2>Síguenos en</h2>
+          <ul>
+            <li>
+              <a href="https://es-la.facebook.com/"
+                ><img
+                  src="../IMAGENES/facebook.jpg"
+                  alt="Facebook"
+                  class="social-icono"
+                />
+                Facebook</a
+              >
+            </li>
+            <li>
+              <a href="https://x.com/"
+                ><img
+                  src="../IMAGENES/x.png"
+                  alt="Twitter"
+                  class="social-icono"
+                />
+                Twitter</a
+              >
+            </li>
+            <li>
+              <a href="https://www.instagram.com/?hl=es"
+                ><img
+                  src="../IMAGENES/isntragram{.jpg"
+                  alt="Instagram"
+                  class="social-icono"
+                />
+                Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".carousel");
+        var instances = M.Carousel.init(elems);
+      });
+
+      // Función para abrir y cerrar el menú hamburguesa
+      const menuToggle = document.getElementById("menu-toggle");
+      const menu = document.getElementById("menu");
+
+      menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("open");
+      });
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".carousel");
+        var instances = M.Carousel.init(elems);
+      });
+    </script>
+    <div id="carritoModal" class="modal">
+      <div class="modal-header">
+        <h2>Carrito de Compras</h2>
+        <button onclick="cerrarCarrito()">Cerrar</button>
+      </div>
+      <div id="carritoContenido">
+        <p>El carrito está vacío.</p>
+      </div>
+      <div class="modal-footer">
+        <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+      </div>
+    </div>
+
+    <footer id="contenido">
+      <div class="footer-contenido">
+        <!-- Footer existente -->
+      </div>
+    </footer>
+
+    <script>
+      // Función para agregar productos al carrito
+      function agregarAlCarrito(nombre, precio) {
+        const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+        carrito.push({ nombre, precio });
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+        alert(`${nombre} ha sido agregado al carrito.`);
+      }
+
+      // Mostrar el carrito
+      function mostrarCarrito() {
+        const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+        const carritoModal = document.getElementById("carritoModal");
+        const carritoContenido = document.getElementById("carritoContenido");
+
+        carritoContenido.innerHTML = ""; // Limpiar contenido anterior
+
+        if (carrito.length === 0) {
+          carritoContenido.innerHTML = "<p>El carrito está vacío.</p>";
+        } else {
+          carrito.forEach((producto, index) => {
+            const itemDiv = document.createElement("div");
+            itemDiv.className = "cart-item";
+            itemDiv.innerHTML = `
+                        <span>${producto.nombre} - $${producto.precio}</span>
+                        <button onclick="eliminarDelCarrito(${index})">Eliminar</button>
+                    `;
+            carritoContenido.appendChild(itemDiv);
+          });
+        }
+
+        carritoModal.classList.add("show");
+      }
+
+      // Cerrar el carrito
+      function cerrarCarrito() {
+        document.getElementById("carritoModal").classList.remove("show");
+      }
+
+      // Vaciar el carrito
+      function vaciarCarrito() {
+        localStorage.removeItem("carrito");
+        mostrarCarrito();
+      }
+
+      // Eliminar un producto del carrito
+      function eliminarDelCarrito(index) {
+        const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+        carrito.splice(index, 1);
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+        mostrarCarrito();
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 17 nov 2024, 14:09:50
+    Author     : Franco
+*/
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;
+    animation: modalIn 0.3s ease-out;
+}
+
+/* Animación de entrada del modal */
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Mostrar el modal */
+.modal.show {
+    display: block;
+}
+
+/* Estilo de la cabecera del modal */
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.modal-header h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Estilo del pie del modal */
+.modal-footer {
+    margin-top: 20px;
+    text-align: right;
+    padding-top: 15px;
+    border-top: 2px solid #f0f0f0;
+}
+
+/* Botón de Cerrar */
+.modal-footer button {
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer button:hover {
+    background-color: #ff3b1f;
+}
+
+/* Estilo para los elementos del carrito */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cart-item:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo de los nombres y precios */
+.cart-item span {
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Botón de Eliminar */
+.cart-item button {
+    background-color: #ff4747;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item button:hover {
+    background-color: #ff2f2f;
+}
+
+/* Botón de Vaciar carrito */
+.modal-footer button.vaciar {
+    background-color: #3498db;
+}
+
+.modal-footer button.vaciar:hover {
+    background-color: #2980b9;
+}
