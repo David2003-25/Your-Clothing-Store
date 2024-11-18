@@ -1,0 +1,30 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 17 nov 2024, 14:06:51
+    Author     : Franco
+*/
+
+/* Estilo para la ventana emergente */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+}
+.popup.show {
+    display: block;
+}
+.popup button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
