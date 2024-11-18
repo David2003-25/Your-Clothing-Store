@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    background-image: url('../IMAGENES/logo_del_logueo.jpeg'); 
+    background-image: url('logo_del_logueo.jpeg'); 
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
